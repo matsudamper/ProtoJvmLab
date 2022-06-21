@@ -19,7 +19,8 @@ class Client(host: String, port: Int) {
         val response = runCatching {
             stub.test(
                 MainOuterClass.ClientRequest1.newBuilder()
-                    .setOne("Request2")
+                    .setOne("ClientRequest1 One")
+                    .setTwo("ClientRequest1 Two")
                     .build()
             )
         }.onFailure {

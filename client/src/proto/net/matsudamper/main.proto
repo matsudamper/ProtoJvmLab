@@ -9,6 +9,7 @@ service Main {
 
 message ClientRequest1 {
   optional string one = 1;
+  optional string two = 2;
 }
 
 message Response {

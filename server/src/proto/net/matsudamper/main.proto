@@ -11,11 +11,6 @@ message Request1 {
   optional string one = 1;
 }
 
-message Request2 {
-  optional string one = 1;
-  optional string two = 2;
-}
-
 message Response {
   optional string value = 1;
 }
