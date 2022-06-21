@@ -1,0 +1,17 @@
+package net.matsudamper;
+option java_package = "net.matsudamper";
+
+import "google/protobuf/wrappers.proto";
+
+service Main {
+  rpc Test (ClientRequest1) returns (Response);
+}
+
+message ClientRequest1 {
+  optional string one = 1;
+  optional string two = 2;
+}
+
+message Response {
+  optional string value = 1;
+}
